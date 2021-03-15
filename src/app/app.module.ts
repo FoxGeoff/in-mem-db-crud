@@ -8,10 +8,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { VillainInMemDataService } from './services/villain-in-mem-data.service';
+import { ListVillainsComponent } from './components/list-villains/list-villains.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListVillainsComponent
   ],
   imports: [
     BrowserModule,
