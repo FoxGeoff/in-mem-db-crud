@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "in-mem-db-crud"
+    }
+  },
+  "defaultProject": "in-mem-db-crud",
+  "cli": {
+    "analytics": "909006e8-0f2b-494f-947f-e6d50d6de165"
+  }
 }
