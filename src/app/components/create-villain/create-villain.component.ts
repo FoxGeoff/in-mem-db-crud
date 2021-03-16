@@ -9,7 +9,7 @@ import { HttpClientVillainService } from 'src/app/services/http-client-villain.s
   templateUrl: './create-villain.component.html',
   styleUrls: ['./create-villain.component.css']
 })
-export class CreateVillainComponent implements OnInit, OnDestroy{
+export class CreateVillainComponent implements OnInit, OnDestroy {
 
   createVillainForm = new FormGroup({
     id: new FormControl(''),
