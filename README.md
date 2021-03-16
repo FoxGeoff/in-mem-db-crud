@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Project references (Acknowledgement to Ian Carpenter)
 
 1. Ref. <https://github.com/iancarpenter/angular-crud-five>
+2. Ref. fxLayout: <https://tburleson-layouts-demos.firebaseapp.com/#/docs>
 
 ## Kanban Task #1: api installation and configuration
 
