@@ -12,13 +12,15 @@ import { ListVillainsComponent } from './components/list-villains/list-villains.
 import { CreateVillainComponent } from './components/create-villain/create-villain.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateVillianComponent } from './components/update-villian/update-villian.component';
+import { DeleteVillianComponent } from './components/delete-villian/delete-villian.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListVillainsComponent,
     CreateVillainComponent,
-    UpdateVillianComponent
+    UpdateVillianComponent,
+    DeleteVillianComponent
   ],
   imports: [
     BrowserModule,
