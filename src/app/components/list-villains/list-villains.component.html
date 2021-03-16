@@ -1,18 +1,24 @@
 <div class="container">
+  <span> <button (click)="AddVillain()">Add</button></span>
+
   <table class="table table-dark">
-      <thead>
-          <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Episode</th>
-          </tr>
-      </thead>
-      <tbody *ngFor="let villain of villains">
-          <tr>
-              <th scope="row">{{ villain.id }}</th>
-              <td>{{ villain.name }}</td>
-              <td>{{ villain.episode }}</td>
-          </tr>
-      </tbody>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Episode</th>
+        <th>Delete</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let villain of villains">
+      <tr>
+        <th scope="row">{{ villain.id }}</th>
+        <td>{{ villain.name }}</td>
+        <td>{{ villain.episode }}</td>
+        <td><button>delete</button></td>
+        <td><button>edit</button></td>
+      </tr>
+    </tbody>
   </table>
 </div>

@@ -6,7 +6,7 @@ import { catchError } from 'rxjs/operators';
 import { Villain } from '../classes/villain';
 import { VillainsService } from './villain.service';
 
-const cudOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json'})};
+const cudOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,7 @@ export class HttpClientVillainService extends VillainsService {
 
   constructor(private http: HttpClient) {
     super();
-   }
+  }
 
   getVillains(): Observable<Villain[]> {
     return this.http.get<Villain[]>(this.villainsUrl).pipe(
@@ -31,8 +31,9 @@ export class HttpClientVillainService extends VillainsService {
     );
   }
 
-  addVillain(name: string, episode: string): Observable<Villain> {
-    const villain = { name, episode };
+  addVillain(id: number, name: string, episode: string): Observable<Villain> {
+
+    const villain = { id, name, episode };
 
     return this.http.post<Villain>(this.villainsUrl, villain, cudOptions).pipe(
       catchError(this.handleError)
@@ -52,7 +53,7 @@ export class HttpClientVillainService extends VillainsService {
     term = term.trim();
     // add safe, encoded search parameter if term is present
     const options = term ?
-    { params: new HttpParams().set('name', term)} : {};
+      { params: new HttpParams().set('name', term) } : {};
 
     return this.http.get<Villain[]>(this.villainsUrl, options).pipe(
       catchError(this.handleError)

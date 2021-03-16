@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
+## Project references (credits to Ian Carpenter)
+
+1. Ref. <https://github.com/iancarpenter/angular-crud-five>
+
 ## Kanban Task #1: api installation and configuration
 
 1. <https://oraclefrontovik.com/2020/01/19/angular-crud-1-in-memory-web-api-installation-and-configuration/>
@@ -10,3 +14,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Task: Configuration
 
 ## Kanban Task #2: Angular CRUD 2: Read
+
+1. Ref. <https://oraclefrontovik.com/2020/01/23/angular-crud-2-read/>
+
+## Kanban Task #2: Angular CRUD 3: Create
+
+1. Ref. <https://oraclefrontovik.com/2020/02/08/angular-crud-3-create/>
+
+## Kanban Task #2: Angular CRUD 4: Update
+
+1. Ref. <https://oraclefrontovik.com/2020/02/14/angular-crud-4-update/v>
+
+## Kanban Task #2: Angular CRUD 5: Delete
+
+1.Ref. <https://oraclefrontovik.com/2020/02/14/angular-crud-5-delete/>

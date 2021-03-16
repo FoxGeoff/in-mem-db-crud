@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Villain } from 'src/app/classes/villain';
 import { HttpClientVillainService } from 'src/app/services/http-client-villain.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-villains',
@@ -11,7 +12,7 @@ export class ListVillainsComponent implements OnInit {
 
   villains: Villain[] = [];
 
-  constructor(private villainService: HttpClientVillainService) { }
+  constructor(private villainService: HttpClientVillainService, private router: Router) { }
 
   ngOnInit() {
     this.getVillains();
@@ -21,5 +22,9 @@ export class ListVillainsComponent implements OnInit {
     this.villainService.getVillains().subscribe(data => {
       this.villains = data;
     });
+  }
+
+  AddVillain() {
+    this.router.navigate(['/villians/add-villain']);
   }
 }
