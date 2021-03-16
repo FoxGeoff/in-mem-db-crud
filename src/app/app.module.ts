@@ -11,12 +11,14 @@ import { VillainInMemDataService } from './services/villain-in-mem-data.service'
 import { ListVillainsComponent } from './components/list-villains/list-villains.component';
 import { CreateVillainComponent } from './components/create-villain/create-villain.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdateVillianComponent } from './components/update-villian/update-villian.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListVillainsComponent,
-    CreateVillainComponent
+    CreateVillainComponent,
+    UpdateVillianComponent
   ],
   imports: [
     BrowserModule,

@@ -24,7 +24,16 @@ export class ListVillainsComponent implements OnInit {
     });
   }
 
-  AddVillain() {
+  addVillain() {
     this.router.navigate(['/villians/add-villain']);
   }
+
+  editVillain() {
+    this.router.navigate(['/villians/edit-villain']);
+  }
+
+  deleteVillain() {
+    this.router.navigate(['/villians/delete-villain']);
+  }
+
 }

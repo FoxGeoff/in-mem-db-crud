@@ -23,7 +23,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Kanban Task #2: Angular CRUD 4: Update
 
-1. Ref. <https://oraclefrontovik.com/2020/02/14/angular-crud-4-update/v>
+1. Ref. <https://oraclefrontovik.com/2020/02/14/angular-crud-4-update/>
 
 ## Kanban Task #2: Angular CRUD 5: Delete
 

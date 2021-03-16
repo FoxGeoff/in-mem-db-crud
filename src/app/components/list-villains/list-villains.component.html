@@ -1,5 +1,5 @@
 <div class="container">
-  <span> <button (click)="AddVillain()">Add</button></span>
+  <span> <button (click)="addVillain()">Add</button></span>
 
   <table class="table table-dark">
     <thead>
@@ -16,8 +16,9 @@
         <th scope="row">{{ villain.id }}</th>
         <td>{{ villain.name }}</td>
         <td>{{ villain.episode }}</td>
-        <td><button>delete</button></td>
-        <td><button>edit</button></td>
+        <td><button (click)="editVillain()">edit</button></td>
+        <td><button (click)="deleteVillain()">delete</button></td>
+
       </tr>
     </tbody>
   </table>
