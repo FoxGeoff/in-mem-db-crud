@@ -1,34 +1,32 @@
-<p>create-villain works!</p>
-
-<div class="container">
-  <form [formGroup]="createVillainForm">
-    <div class="form-group">
-      <label>
-        id:
-        <input type="text" formControlName="id" class="form-control" />
-      </label>
-    </div>
-    <div class="form-group">
-      <label>
-        name:
-        <input type="text" formControlName="name" class="form-control" />
-      </label>
-    </div>
-    <div class="form-group">
-      <label>
-        Episode:
-        <input type="text" formControlName="episode" class="form-control" />
-      </label>
-    </div>
-    <div class="form-group row">
-      <div class="col-md-1">
-        <button type="reset" class="btn btn-secondary" routerLink="/">
-          Cancel
-        </button>
+<div class="container" fxLayoutAlign="start">
+  <form fxLayout="column" [formGroup]="createVillainForm">
+    <p style="color: blueviolet">create-villain works!</p>
+    <!---->
+    <mat-form-field appearance="standard">
+      <div class="form-group">
+        <mat-label>Id:</mat-label>
+        <input matInput formControlName="id" class="form-control" />
       </div>
+    </mat-form-field>
+    <!---->
+    <mat-form-field appearance="standard">
+      <div class="form-group">
+        <mat-label> Name: </mat-label>
+        <input matInput formControlName="name" class="form-control" />
+      </div>
+    </mat-form-field>
+    <!---->
+    <mat-form-field appearance="standard">
+      <div class="form-group">
+        <mat-label>Episode:</mat-label>
+        <input matInput formControlName="episode" class="form-control" />
+      </div>
+    </mat-form-field>
 
-      <div class="col-md-1">
-        <button type="button" class="btn btn-primary" (click)="createVillain()">
+    <div class="form-group row">
+      <div fxLayoutGap="18px">
+        <a mat-raised-button routerLink="/">Cancel</a>
+        <button mat-raised-button color="primary" (click)="createVillain()">
           Create
         </button>
       </div>

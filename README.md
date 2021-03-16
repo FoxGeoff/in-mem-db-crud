@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
-## Project references (credits to Ian Carpenter)
+## Project references (Acknowledgement to Ian Carpenter)
 
 1. Ref. <https://github.com/iancarpenter/angular-crud-five>
 
@@ -17,14 +17,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. Ref. <https://oraclefrontovik.com/2020/01/23/angular-crud-2-read/>
 
-## Kanban Task #2: Angular CRUD 3: Create
+## Kanban Task #2: Angular CRUD 3: Create - DONE
 
 1. Ref. <https://oraclefrontovik.com/2020/02/08/angular-crud-3-create/>
 
-## Kanban Task #2: Angular CRUD 4: Update
+## Kanban Task #2: Angular CRUD 4: Update - DONE
 
 1. Ref. <https://oraclefrontovik.com/2020/02/14/angular-crud-4-update/>
 
-## Kanban Task #2: Angular CRUD 5: Delete
+## Kanban Task #2: Angular CRUD 5: Delete - WIP
 
 1.Ref. <https://oraclefrontovik.com/2020/02/14/angular-crud-5-delete/>
+
+### Task: Add ```ng add @angular/material```

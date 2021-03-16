@@ -13,6 +13,8 @@ import { CreateVillainComponent } from './components/create-villain/create-villa
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateVillianComponent } from './components/update-villian/update-villian.component';
 import { DeleteVillianComponent } from './components/delete-villian/delete-villian.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { DeleteVillianComponent } from './components/delete-villian/delete-villi
     environment.production ?
       [] : InMemoryWebApiModule.forRoot(VillainInMemDataService, { delay: 1000 }),
     FormsModule,       // not used
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
