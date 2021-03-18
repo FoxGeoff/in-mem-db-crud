@@ -1,5 +1,6 @@
 <div class="container" fxLayoutAlign="start" fxLayout="column">
   <span> <button (click)="addVillain()">Add</button></span>
+
   <table class="table table-dark">
     <thead>
       <tr>
@@ -15,9 +16,43 @@
         <th scope="row">{{ villain.id }}</th>
         <td>{{ villain.name }}</td>
         <td>{{ villain.episode }}</td>
-        <td><button (click)="editVillain()">edit</button></td>
-        <td><button (click)="deleteVillain()">delete</button></td>
+        <td><button (click)="editVillain(1)">edit</button></td>
+        <td><button (click)="deleteVillain(1)">delete</button></td>
       </tr>
     </tbody>
   </table>
+
+  <!-- Table -->
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!-- Id Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+      </ng-container>
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+      </ng-container>
+      <!-- Episode Column -->
+      <ng-container matColumnDef="episode">
+        <th mat-header-cell *matHeaderCellDef>Episode</th>
+        <td mat-cell *matCellDef="let row">{{ row.episode }}</td>
+      </ng-container>
+      <!-- Action Column -->
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>Action</th>
+        <td mat-cell *matCellDef="let element" class="action-link">
+          <a mat-button (click)="editVillain(element.id)">Edit</a> |
+          <a mat-button color="warn" (click)="deleteVillain(element.id)"
+            >Delete</a
+          >
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
 </div>

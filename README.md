@@ -31,3 +31,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1.Ref. <https://oraclefrontovik.com/2020/02/14/angular-crud-5-delete/>
 
 ### Task: Add ```ng add @angular/material```
+
+### Task: Add Material Table
+
+1. Ref. <https://www.freakyjolly.com/angular-material-table-operations-using-dialog/>
+
+2. Add delete|edite to the Mat Table
