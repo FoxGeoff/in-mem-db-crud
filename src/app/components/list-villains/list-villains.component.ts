@@ -3,6 +3,7 @@ import { Villain } from 'src/app/classes/villain';
 import { HttpClientVillainService } from 'src/app/services/http-client-villain.service';
 import { Router } from '@angular/router';
 import { MatTableDataSource } from '@angular/material/table';
+import { VillainTransferService } from 'src/app/services/villian-transfer.services';
 @Component({
   selector: 'app-list-villains',
   templateUrl: './list-villains.component.html',
@@ -14,7 +15,10 @@ export class ListVillainsComponent implements OnInit {
   villains: Villain[] = [];
   dataSource: any;
 
-  constructor(private villainService: HttpClientVillainService, private router: Router) { }
+  constructor(
+    private villainService: HttpClientVillainService,
+    private villainTransferService: VillainTransferService,
+    private router: Router) { }
 
   ngOnInit() {
     this.getVillains();
@@ -29,6 +33,12 @@ export class ListVillainsComponent implements OnInit {
 
   addVillain() {
     this.router.navigate(['/villians/add-villain']);
+  }
+
+  toUpdateVillain(id: string, name: string, episode: string) {
+    const villain = { id: +id, name, episode };
+    this.villainTransferService.setVillain(villain);
+    this.router.navigate(['/villians/edit-villain']);
   }
 
   editVillain(id: number) {
