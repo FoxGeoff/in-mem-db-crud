@@ -1,26 +1,7 @@
 <div class="container" fxLayoutAlign="start" fxLayout="column">
-  <span> <button (click)="addVillain()">Add</button></span>
+  <span> <button mat-button color="primary" (click)="addVillain()">Add</button></span>
 
-  <table class="table table-dark">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Episode</th>
-        <th>Delete</th>
-        <th>Edit</th>
-      </tr>
-    </thead>
-    <tbody *ngFor="let villain of villains">
-      <tr>
-        <th scope="row">{{ villain.id }}</th>
-        <td>{{ villain.name }}</td>
-        <td>{{ villain.episode }}</td>
-        <td><button (click)="editVillain(1)">edit</button></td>
-        <td><button (click)="deleteVillain(1)">delete</button></td>
-      </tr>
-    </tbody>
-  </table>
+
 
   <!-- Table -->
   <div class="mat-elevation-z8">
