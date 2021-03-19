@@ -41,12 +41,12 @@ export class ListVillainsComponent implements OnInit {
     this.router.navigate(['/villains/edit-villain']);
   }
 
-  editVillain(id: number) {
-    this.router.navigate(['/villains/edit-villain']);
-  }
-
-  deleteVillain(id: number) {
-    this.router.navigate(['/villains/delete-villain']);
+  deleteVillain(id: string, name: string, episode: string ) {
+    if (confirm('Do you wish to delete ' + name)) {
+      const villain = { id: +id, name, episode };
+      this.villainService.deleteVillain(villain).subscribe();
+      this.getVillains();
+    }
   }
 
 }
