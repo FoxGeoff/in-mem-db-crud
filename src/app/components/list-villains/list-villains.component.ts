@@ -46,12 +46,13 @@ export class ListVillainsComponent implements OnInit {
     this.router.navigate(['/villains/edit-villain']);
   }
 
+  /*  Modified to use the material dialog-box.component */
   deleteVillain(id: string, name: string, episode: string) {
-    if (confirm('Do you wish to delete ' + name)) {
+    // if (confirm('Do you wish to delete ' + name)) {
       const villain = { id: +id, name, episode };
       this.villainService.deleteVillain(villain).subscribe();
       this.getVillains();
-    }
+    // }
   }
 
   /**
@@ -72,7 +73,8 @@ export class ListVillainsComponent implements OnInit {
       } else if (result.event === 'Update') {
         this.updateRowData(result.data);
       } else if (result.event === 'Delete') {
-        this.deleteRowData(result.data);
+        // this.deleteRowData(result.data);
+        this.deleteVillain(result.data.id, result.data.name, result.data.episode);
       }
     });
   }

@@ -30,16 +30,18 @@
             (click)="toUpdateVillain(villain.id, villain.name, villain.episode)"
             >Edit</a
           >
-          |
+          <!--- using the generic html dialog
           <a
             mat-button
             color="warn"
             (click)="deleteVillain(villain.id, villain.name, villain.episode)"
             >Delete</a
-          >
-          <!-- uusing the material dialoge box  -->
-          <a mat-button color="warn" (click)="openDialog('Delete', villain)">Delete</a>
+          > -->
 
+          <!-- using the material dialoge box  -->
+          <a mat-button color="warn" (click)="openDialog('Delete', villain)"
+            >Delete</a
+          >
         </td>
       </ng-container>
 
