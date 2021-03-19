@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { UpdateVillainComponent } from './components/update-villain/update-villain.component';
 import { DeleteVillainComponent } from './components/delete-villain/delete-villain.component';
+import { DialogBoxComponent } from './dialog-box/dialog-box.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { DeleteVillainComponent } from './components/delete-villain/delete-villa
     ListVillainsComponent,
     CreateVillainComponent,
     UpdateVillainComponent,
-    DeleteVillainComponent
+    DeleteVillainComponent,
+    DialogBoxComponent,
+    DialogBoxComponent
   ],
   imports: [
     BrowserModule,

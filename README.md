@@ -26,7 +26,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. Ref. <https://oraclefrontovik.com/2020/02/14/angular-crud-4-update/>
 
-## Kanban Task #2: Angular CRUD 5: Delete - WIP <= here 3/18/21
+## Kanban Task #2: Angular CRUD 5: Delete - DONE
 
 1.Ref. <https://oraclefrontovik.com/2020/02/14/angular-crud-5-delete/>
 
@@ -37,3 +37,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. Ref. <https://www.freakyjolly.com/angular-material-table-operations-using-dialog/>
 
 2. Add delete|edite to the Mat Table
+
+### Task: Add Dialog box for delete
