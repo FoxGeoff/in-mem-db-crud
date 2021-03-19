@@ -37,6 +37,9 @@
             (click)="deleteVillain(villain.id, villain.name, villain.episode)"
             >Delete</a
           >
+          <!-- uusing the material dialoge box  -->
+          <a mat-button color="warn" (click)="openDialog('Delete', villain)">Delete</a>
+
         </td>
       </ng-container>
 
