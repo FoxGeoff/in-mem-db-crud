@@ -32,21 +32,21 @@ export class ListVillainsComponent implements OnInit {
   }
 
   addVillain() {
-    this.router.navigate(['/villians/add-villain']);
+    this.router.navigate(['/villains/add-villain']);
   }
 
   toUpdateVillain(id: string, name: string, episode: string) {
     const villain = { id: +id, name, episode };
     this.villainTransferService.setVillain(villain);
-    this.router.navigate(['/villians/edit-villain']);
+    this.router.navigate(['/villains/edit-villain']);
   }
 
   editVillain(id: number) {
-    this.router.navigate(['/villians/edit-villain']);
+    this.router.navigate(['/villains/edit-villain']);
   }
 
   deleteVillain(id: number) {
-    this.router.navigate(['/villians/delete-villain']);
+    this.router.navigate(['/villains/delete-villain']);
   }
 
 }

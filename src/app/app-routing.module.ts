@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CreateVillainComponent } from './components/create-villain/create-villain.component';
-import { DeleteVillianComponent } from './components/delete-villian/delete-villian.component';
+import { DeleteVillainComponent } from './components/delete-villain/delete-villain.component';
 import { ListVillainsComponent } from './components/list-villains/list-villains.component';
-import { UpdateVillianComponent } from './components/update-villian/update-villian.component';
+import { UpdateVillainComponent } from './components/update-villain/update-villain.component';
 
 
 const routes: Routes = [
-  { path: 'villians', component: ListVillainsComponent, pathMatch: 'full' },
-  { path: 'villians/add-villain', component: CreateVillainComponent, pathMatch: 'full' },
-  { path: 'villians/edit-villain', component: UpdateVillianComponent, pathMatch: 'full' },
-  { path: 'villians/delete-villain', component: DeleteVillianComponent, pathMatch: 'full' },
-  { path: '', redirectTo: 'villians', pathMatch: 'full' }
+  { path: 'villains', component: ListVillainsComponent, pathMatch: 'full' },
+  { path: 'villains/add-villain', component: CreateVillainComponent, pathMatch: 'full' },
+  { path: 'villains/edit-villain', component: UpdateVillainComponent, pathMatch: 'full' },
+  { path: 'villains/delete-villain', component: DeleteVillainComponent, pathMatch: 'full' },
+  { path: '', redirectTo: 'villains', pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -11,18 +11,18 @@ import { VillainInMemDataService } from './services/villain-in-mem-data.service'
 import { ListVillainsComponent } from './components/list-villains/list-villains.component';
 import { CreateVillainComponent } from './components/create-villain/create-villain.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { UpdateVillianComponent } from './components/update-villian/update-villian.component';
-import { DeleteVillianComponent } from './components/delete-villian/delete-villian.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { UpdateVillainComponent } from './components/update-villain/update-villain.component';
+import { DeleteVillainComponent } from './components/delete-villain/delete-villain.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListVillainsComponent,
     CreateVillainComponent,
-    UpdateVillianComponent,
-    DeleteVillianComponent
+    UpdateVillainComponent,
+    DeleteVillainComponent
   ],
   imports: [
     BrowserModule,
